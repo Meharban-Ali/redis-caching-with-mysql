@@ -1,6 +1,6 @@
 # 🚀 Redis Caching with MySQL
 
-A hands-on learning project to understand **Redis caching** in a real-world scenario. Built RESTful APIs for product management using **Node.js**, **MySQL** as the primary database, and **Redis** for caching — with pagination support.
+A hands-on learning project to understand **Redis caching** in a real-world scenario. Built RESTful APIs for product management using **Springboot**, **MySQL** as the primary database, and **Redis** for caching — with pagination support.
 
 > ⚠️ This project is built purely for **learning purposes** to understand how Redis works alongside a relational database.
 
