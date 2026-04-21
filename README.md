@@ -200,6 +200,7 @@ Import the Postman collection (if added) or manually test using the endpoints li
 
 Download Postman Collection:
 ecommerce-api.postman_collection.json
+Live API Docs: https://https://documenter.getpostman.com/view/40823591/2sBXqCNNkF
 
 ---
 
