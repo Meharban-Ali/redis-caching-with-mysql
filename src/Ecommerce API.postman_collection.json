@@ -1,0 +1,863 @@
+{
+  "info": {
+    "_postman_id": "e09b698e-b63f-4e88-bddc-d8b1b27ac906",
+    "name": "Ecommerce API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40823591"
+  },
+  "item": [
+    {
+      "name": "Create product",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Mobile motog 5G\",\r\n    \"price\": 18000.00,\r\n    \"rating\": 4.5,\r\n    \"stockQuantity\": 150\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create product",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Mobile Samsung 5G\",\r\n    \"price\": 95000.00,\r\n    \"rating\": 4.5,\r\n    \"stockQuantity\": 125\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 18:34:55 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Product created successfully\",\n    \"data\": {\n        \"id\": 12,\n        \"name\": \"Mobile Samsung 5G\",\n        \"price\": 95000,\n        \"rating\": 4.5,\n        \"stockQuantity\": 125,\n        \"stockStatus\": \"IN_STOCK\",\n        \"priceFormatted\": \"₹95,000.00\",\n        \"isAvailable\": true,\n        \"createdAt\": \"2026-04-15 00:04:55\",\n        \"updatedAt\": \"2026-04-15 00:04:55\"\n    },\n    \"timestamp\": \"2026-04-105 00:04:65\"\n}"
+        },
+        {
+          "name": "Create product",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Mouse Portronics noiseless\",\r\n    \"price\": 95000.00,\r\n    \"rating\": 3.5,\r\n    \"stockQuantity\": 40\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 19:05:44 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Product created successfully\",\n    \"data\": {\n        \"id\": 13,\n        \"name\": \"Mouse Portronics noiseless\",\n        \"price\": 95000,\n        \"rating\": 3.5,\n        \"stockQuantity\": 40,\n        \"stockStatus\": \"IN_STOCK\",\n        \"priceFormatted\": \"₹95,000.00\",\n        \"isAvailable\": true,\n        \"createdAt\": \"2026-04-15 00:35:43\",\n        \"updatedAt\": \"2026-04-15 00:35:43\"\n    },\n    \"timestamp\": \"2026-04-105 00:04:15\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get product by id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products/14",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "14"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get product by id",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products",
+                "2"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 18:16:51 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Product fetched from Redis cache\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Gaming Laptop - ASUS ROG Updated\",\n        \"price\": 100000,\n        \"rating\": 4.7,\n        \"stockQuantity\": 45,\n        \"stockStatus\": \"IN_STOCK\",\n        \"priceFormatted\": \"₹100,000.00\",\n        \"isAvailable\": true,\n        \"createdAt\": \"2026-04-12 11:54:36\",\n        \"updatedAt\": \"2026-04-14 22:53:04\"\n    },\n    \"fromCache\": true,\n    \"timestamp\": \"2026-04-104 23:04:46\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get All Products",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products?page=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get All Products",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 16 Apr 2026 18:30:03 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Products fetched from Redis cache\",\n    \"data\": {\n        \"content\": [\n            {\n                \"id\": 2,\n                \"name\": \"Gaming Laptop - ASUS ROG Updated\",\n                \"price\": 100000,\n                \"rating\": 4.7,\n                \"stockQuantity\": 45,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹100,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-12 11:54:36\",\n                \"updatedAt\": \"2026-04-14 22:53:04\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Samsung Galaxy S24 Ultra\",\n                \"price\": 129999,\n                \"rating\": 4.7,\n                \"stockQuantity\": 150,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹129,999.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-12 11:54:36\",\n                \"updatedAt\": \"2026-04-12 11:54:36\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Sony WH-1000XM5 Headphones\",\n                \"price\": 29990,\n                \"rating\": 4.6,\n                \"stockQuantity\": 100,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹29,990.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-12 11:54:36\",\n                \"updatedAt\": \"2026-04-12 11:54:36\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Dell 27-inch 4K Monitor\",\n                \"price\": 45000,\n                \"rating\": 4.4,\n                \"stockQuantity\": 75,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹45,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-12 11:54:36\",\n                \"updatedAt\": \"2026-04-12 11:54:36\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Coding Laptop - HP I5\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 50,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-13 22:09:45\",\n                \"updatedAt\": \"2026-04-13 22:09:45\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Editing Laptop - SAMSUNG 13-PRO\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-13 22:17:27\",\n                \"updatedAt\": \"2026-04-13 22:17:27\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Editing Laptop - SAMSUNG 14-PRO\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-13 23:43:10\",\n                \"updatedAt\": \"2026-04-13 23:43:10\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Mackbook Air 5\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-14 00:09:05\",\n                \"updatedAt\": \"2026-04-14 00:09:05\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Mackbook Air-4\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-14 00:09:34\",\n                \"updatedAt\": \"2026-04-14 00:09:34\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Mobile motog 5G\",\n                \"price\": 18000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 150,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹18,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-14 00:10:21\",\n                \"updatedAt\": \"2026-04-14 00:10:21\"\n            }\n        ],\n        \"number\": 0,\n        \"size\": 10,\n        \"totalElements\": 13,\n        \"totalPages\": 2,\n        \"last\": false,\n        \"first\": true,\n        \"numberOfElements\": 10,\n        \"empty\": false\n    },\n    \"fromCache\": true,\n    \"timestamp\": \"2026-04-107 00:04:32\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "update product",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Airpods 2x Ultra-boats\",\r\n    \"price\": 74000.00,\r\n    \"rating\": 4.9,\r\n    \"stockQuantity\": 170\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products/14",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "14"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "update product",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Gaming Laptop - ASUS ROG Updated\",\r\n    \"price\": 100000.00,\r\n    \"rating\": 4.7,\r\n    \"stockQuantity\": 45\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products",
+                "2"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 17:23:04 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Product updated and cache refreshed\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Gaming Laptop - ASUS ROG Updated\",\n        \"price\": 100000,\n        \"rating\": 4.7,\n        \"stockQuantity\": 45,\n        \"stockStatus\": \"IN_STOCK\",\n        \"priceFormatted\": \"₹100,000.00\",\n        \"isAvailable\": true,\n        \"createdAt\": \"2026-04-12 11:54:36\",\n        \"updatedAt\": \"2026-04-12 11:54:36\"\n    },\n    \"timestamp\": \"2026-04-104 22:04:44\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "delete product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Gaming Laptop - ASUS ROG Updated\",\r\n    \"price\": 90000.00,\r\n    \"rating\": 4.7,\r\n    \"stockQuantity\": 45\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search by name",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Gaming Laptop - ASUS ROG Updated\",\r\n    \"price\": 90000.00,\r\n    \"rating\": 4.7,\r\n    \"stockQuantity\": 45\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products/search?name=Airpods&page=0&size=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Airpods"
+            },
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "search by name",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Gaming Laptop - ASUS ROG Updated\",\r\n    \"price\": 90000.00,\r\n    \"rating\": 4.7,\r\n    \"stockQuantity\": 45\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products/search?name=mobile&page=0&size=10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "mobile"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 17:21:17 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Search results for: mobile\",\n    \"data\": {\n        \"content\": [\n            {\n                \"id\": 11,\n                \"name\": \"Mobile motog 5G\",\n                \"price\": 18000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 150,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹18,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-14 00:10:21\",\n                \"updatedAt\": \"2026-04-14 00:10:21\"\n            }\n        ],\n        \"pageable\": {\n            \"pageNumber\": 0,\n            \"pageSize\": 10,\n            \"sort\": {\n                \"empty\": true,\n                \"sorted\": false,\n                \"unsorted\": true\n            },\n            \"offset\": 0,\n            \"paged\": true,\n            \"unpaged\": false\n        },\n        \"last\": true,\n        \"totalElements\": 1,\n        \"totalPages\": 1,\n        \"size\": 10,\n        \"number\": 0,\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"first\": true,\n        \"numberOfElements\": 1,\n        \"empty\": false\n    },\n    \"timestamp\": \"2026-04-104 22:04:76\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "search product by price",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Gaming Laptop - ASUS ROG Updated\",\r\n    \"price\": 90000.00,\r\n    \"rating\": 4.7,\r\n    \"stockQuantity\": 45\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products/price-range?minPrice=30000&maxPrice=80000&page=0&size=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "price-range"
+          ],
+          "query": [
+            {
+              "key": "minPrice",
+              "value": "30000"
+            },
+            {
+              "key": "maxPrice",
+              "value": "80000"
+            },
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "search product by price",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Gaming Laptop - ASUS ROG Updated\",\r\n    \"price\": 90000.00,\r\n    \"rating\": 4.7,\r\n    \"stockQuantity\": 45\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products/price-range?minPrice=10000&maxPrice=100000&page=0&size=10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products",
+                "price-range"
+              ],
+              "query": [
+                {
+                  "key": "minPrice",
+                  "value": "10000"
+                },
+                {
+                  "key": "maxPrice",
+                  "value": "100000"
+                },
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 17:19:46 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Products in price range\",\n    \"data\": {\n        \"content\": [\n            {\n                \"id\": 11,\n                \"name\": \"Mobile motog 5G\",\n                \"price\": 18000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 150,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹18,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-14 00:10:21\",\n                \"updatedAt\": \"2026-04-14 00:10:21\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Sony WH-1000XM5 Headphones\",\n                \"price\": 29990,\n                \"rating\": 4.6,\n                \"stockQuantity\": 100,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹29,990.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-12 11:54:36\",\n                \"updatedAt\": \"2026-04-12 11:54:36\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Dell 27-inch 4K Monitor\",\n                \"price\": 45000,\n                \"rating\": 4.4,\n                \"stockQuantity\": 75,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹45,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-12 11:54:36\",\n                \"updatedAt\": \"2026-04-12 11:54:36\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Coding Laptop - HP I5\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 50,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-13 22:09:45\",\n                \"updatedAt\": \"2026-04-13 22:09:45\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Editing Laptop - SAMSUNG 13-PRO\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-13 22:17:27\",\n                \"updatedAt\": \"2026-04-13 22:17:27\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Editing Laptop - SAMSUNG 14-PRO\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-13 23:43:10\",\n                \"updatedAt\": \"2026-04-13 23:43:10\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Mackbook Air 5\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-14 00:09:05\",\n                \"updatedAt\": \"2026-04-14 00:09:05\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Mackbook Air-4\",\n                \"price\": 85000,\n                \"rating\": 4.5,\n                \"stockQuantity\": 200,\n                \"stockStatus\": \"IN_STOCK\",\n                \"priceFormatted\": \"₹85,000.00\",\n                \"isAvailable\": true,\n                \"createdAt\": \"2026-04-14 00:09:34\",\n                \"updatedAt\": \"2026-04-14 00:09:34\"\n            }\n        ],\n        \"pageable\": {\n            \"pageNumber\": 0,\n            \"pageSize\": 10,\n            \"sort\": {\n                \"empty\": true,\n                \"sorted\": false,\n                \"unsorted\": true\n            },\n            \"offset\": 0,\n            \"paged\": true,\n            \"unpaged\": false\n        },\n        \"last\": true,\n        \"totalElements\": 8,\n        \"totalPages\": 1,\n        \"size\": 10,\n        \"number\": 0,\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"first\": true,\n        \"numberOfElements\": 8,\n        \"empty\": false\n    },\n    \"timestamp\": \"2026-04-104 22:04:00\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "search product by min rating",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products/rating?minRating=4.5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "rating"
+          ],
+          "query": [
+            {
+              "key": "minRating",
+              "value": "4.5"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "search product by min rating",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/products/rating?minRating=4.5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products",
+                "rating"
+              ],
+              "query": [
+                {
+                  "key": "minRating",
+                  "value": "4.5"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 19:06:59 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Products with min rating: 4.5\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"name\": \"Gaming Laptop - ASUS ROG Updated\",\n            \"price\": 100000,\n            \"rating\": 4.7,\n            \"stockQuantity\": 45,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹100,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-12 11:54:36\",\n            \"updatedAt\": \"2026-04-14 22:53:04\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Samsung Galaxy S24 Ultra\",\n            \"price\": 129999,\n            \"rating\": 4.7,\n            \"stockQuantity\": 150,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹129,999.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-12 11:54:36\",\n            \"updatedAt\": \"2026-04-12 11:54:36\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Sony WH-1000XM5 Headphones\",\n            \"price\": 29990,\n            \"rating\": 4.6,\n            \"stockQuantity\": 100,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹29,990.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-12 11:54:36\",\n            \"updatedAt\": \"2026-04-12 11:54:36\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Coding Laptop - HP I5\",\n            \"price\": 85000,\n            \"rating\": 4.5,\n            \"stockQuantity\": 50,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹85,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-13 22:09:45\",\n            \"updatedAt\": \"2026-04-13 22:09:45\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Editing Laptop - SAMSUNG 13-PRO\",\n            \"price\": 85000,\n            \"rating\": 4.5,\n            \"stockQuantity\": 200,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹85,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-13 22:17:27\",\n            \"updatedAt\": \"2026-04-13 22:17:27\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Editing Laptop - SAMSUNG 14-PRO\",\n            \"price\": 85000,\n            \"rating\": 4.5,\n            \"stockQuantity\": 200,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹85,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-13 23:43:10\",\n            \"updatedAt\": \"2026-04-13 23:43:10\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Mackbook Air 5\",\n            \"price\": 85000,\n            \"rating\": 4.5,\n            \"stockQuantity\": 200,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹85,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-14 00:09:05\",\n            \"updatedAt\": \"2026-04-14 00:09:05\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Mackbook Air-4\",\n            \"price\": 85000,\n            \"rating\": 4.5,\n            \"stockQuantity\": 200,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹85,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-14 00:09:34\",\n            \"updatedAt\": \"2026-04-14 00:09:34\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Mobile motog 5G\",\n            \"price\": 18000,\n            \"rating\": 4.5,\n            \"stockQuantity\": 150,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹18,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-14 00:10:21\",\n            \"updatedAt\": \"2026-04-14 00:10:21\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Mobile Samsung 5G\",\n            \"price\": 95000,\n            \"rating\": 4.5,\n            \"stockQuantity\": 125,\n            \"stockStatus\": \"IN_STOCK\",\n            \"priceFormatted\": \"₹95,000.00\",\n            \"isAvailable\": true,\n            \"createdAt\": \"2026-04-15 00:04:55\",\n            \"updatedAt\": \"2026-04-15 00:04:55\"\n        }\n    ],\n    \"timestamp\": \"2026-04-105 00:04:44\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "low stock",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/products/low-stock?threshold=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "low-stock"
+          ],
+          "query": [
+            {
+              "key": "threshold",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "low stock",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/products/low-stock?threshold=10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "products",
+                "low-stock"
+              ],
+              "query": [
+                {
+                  "key": "threshold",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 14 Apr 2026 19:10:37 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Low stock products (threshold: 10)\",\n    \"data\": [],\n    \"timestamp\": \"2026-04-105 00:04:57\"\n}"
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}
