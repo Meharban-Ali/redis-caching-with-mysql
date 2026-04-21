@@ -196,6 +196,11 @@ All APIs have been tested using **Postman**.
 
 Import the Postman collection (if added) or manually test using the endpoints listed above.
 
+## API Testing
+
+Download Postman Collection:
+ecommerce-api.postman_collection.json
+
 ---
 
 ## 📌 Note
